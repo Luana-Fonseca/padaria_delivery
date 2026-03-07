@@ -56,7 +56,7 @@ bakery_delivery/
 
 ### Instalação
 ```bash
-cd bakery_delivery
+cd padaria_delivery
 pnpm install
 ```
 
@@ -172,33 +172,3 @@ pnpm preview
 ## 💾 Armazenamento
 
 O carrinho é salvo automaticamente no `localStorage` do navegador, permitindo que os usuários recuperem seus itens mesmo após fechar o navegador.
-
-## 📞 Contato
-
-- **Telefone**: (11) 98765-4321
-- **Email**: contato@padaria.com.br
-- **Endereço**: Rua das Flores, 123 - São Paulo, SP
-
-## ⏰ Horário de Funcionamento
-
-- **Segunda a Sexta**: 6:00 - 20:00
-- **Sábado e Domingo**: 7:00 - 19:00
-
-## 📄 Licença
-
-MIT
-
-## 🎯 Próximas Melhorias
-
-- Integração com sistema de pagamento (Stripe)
-- Autenticação de usuários
-- Histórico de pedidos
-- Sistema de avaliações e comentários
-- Integração com Google Maps
-- Notificações por email/SMS
-- Dashboard de administração
-- Integração com redes sociais
-
----
-
-Desenvolvido com ❤️ para sua padaria/lanchonete
