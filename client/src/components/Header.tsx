@@ -34,7 +34,6 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center gap-2 font-display text-2xl font-bold text-primary hover:text-primary/80 transition-colors">
-              <span className="text-3xl">🥖</span>
               <span>Padaria & Lanchonete</span>
             </a>
           </Link>
