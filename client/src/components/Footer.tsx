@@ -9,7 +9,6 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="text-3xl">🥖</span>
               <h3 className="font-display text-xl font-bold">Padaria & Lanchonete</h3>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -121,7 +120,7 @@ export default function Footer() {
         <div className="border-t border-border py-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted-foreground">
             <p>
-              &copy; 2024 Padaria & Lanchonete. Todos os direitos reservados.
+              &copy; 2026 Padaria & Lanchonete. Todos os direitos reservados.
             </p>
             <div className="flex gap-4 md:justify-end">
               <a href="#" className="hover:text-primary transition-colors">
