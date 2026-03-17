@@ -98,17 +98,21 @@ export default function Cart() {
                           updateQuantity(item.id, Math.max(1, item.quantity - 1))
                         }
                         className="p-1 hover:bg-muted rounded transition-colors"
+                        aria-label="Diminuir quantidade"
                       >
                         <Minus className="w-4 h-4" />
                       </button>
+
                       <span className="px-3 py-1 bg-muted rounded">
                         {item.quantity}
                       </span>
+
                       <button
                         onClick={() =>
                           updateQuantity(item.id, item.quantity + 1)
                         }
                         className="p-1 hover:bg-muted rounded transition-colors"
+                        aria-label="Aumentar quantidade"
                       >
                         <Plus className="w-4 h-4" />
                       </button>
@@ -119,9 +123,11 @@ export default function Cart() {
                     <p className="font-bold mb-3">
                       R$ {(item.price * item.quantity).toFixed(2)}
                     </p>
+
                     <button
                       onClick={() => removeItem(item.id)}
                       className="text-destructive hover:text-destructive/80 transition-colors"
+                      aria-label="Remover item"
                     >
                       <Trash2 className="w-5 h-5" />
                     </button>
@@ -211,8 +217,11 @@ export default function Cart() {
                   {/* Checkout Form */}
                   <form onSubmit={handleCheckout} className="space-y-4">
                     <div>
-                      <label className="block text-sm font-bold mb-2">Nome</label>
+                      <label htmlFor="name" className="block text-sm font-bold mb-2">
+                        Nome
+                      </label>
                       <input
+                        id="name"
                         type="text"
                         value={name}
                         onChange={(e) => setName(e.target.value)}
@@ -222,8 +231,11 @@ export default function Cart() {
                     </div>
 
                     <div>
-                      <label className="block text-sm font-bold mb-2">Telefone</label>
+                      <label htmlFor="phone" className="block text-sm font-bold mb-2">
+                        Telefone
+                      </label>
                       <input
+                        id="phone"
                         type="tel"
                         value={phone}
                         onChange={(e) => setPhone(e.target.value)}
@@ -234,8 +246,11 @@ export default function Cart() {
 
                     {deliveryOption === 'delivery' && (
                       <div>
-                        <label className="block text-sm font-bold mb-2">Endereço</label>
+                        <label htmlFor="address" className="block text-sm font-bold mb-2">
+                          Endereço
+                        </label>
                         <textarea
+                          id="address"
                           value={address}
                           onChange={(e) => setAddress(e.target.value)}
                           className="w-full px-4 py-2 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"

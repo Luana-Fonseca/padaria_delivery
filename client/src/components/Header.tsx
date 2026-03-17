@@ -40,21 +40,24 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/#menu">
-              <a className="text-foreground hover:text-primary transition-colors font-medium">Cardápio</a>
-            </Link>
-            <Link href="/#promocoes">
-              <a className="text-foreground hover:text-primary transition-colors font-medium">Promoções</a>
-            </Link>
-            <Link href="/#sobre">
-              <a className="text-foreground hover:text-primary transition-colors font-medium">Sobre</a>
-            </Link>
-            <Link href="/rastrear">
-              <a className="text-foreground hover:text-primary transition-colors font-medium">Rastrear</a>
-            </Link>
-            <Link href="/#contato">
-              <a className="text-foreground hover:text-primary transition-colors font-medium">Contato</a>
-            </Link>
+            <a href="/#menu" className="text-foreground hover:text-primary transition-colors font-medium">
+              Cardápio
+            </a>
+
+            <a href="/#promocoes" className="text-foreground hover:text-primary transition-colors font-medium">
+              Promoções
+            </a>
+
+            <a href="/#sobre" className="text-foreground hover:text-primary transition-colors font-medium">
+              Sobre
+            </a>
+
+            <a href="/rastrear" className="text-foreground hover:text-primary transition-colors font-medium">
+              Rastrear
+            </a>
+            <a href="/#contato" className="text-foreground hover:text-primary transition-colors font-medium">
+              Contato
+            </a>
           </div>
 
           {/* Cart Button */}

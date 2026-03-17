@@ -103,13 +103,19 @@ export default function ProductCard({ product }: ProductCardProps) {
             <button
               onClick={() => setQuantity(Math.max(1, quantity - 1))}
               className="p-2 hover:bg-muted transition-colors"
+              aria-label="Diminuir quantidade"
             >
               <Minus className="w-4 h-4" />
             </button>
-            <span className="px-3 py-2 text-center min-w-12">{quantity}</span>
+
+            <span className="px-3 py-2 text-center min-w-12">
+              {quantity}
+            </span>
+
             <button
               onClick={() => setQuantity(quantity + 1)}
               className="p-2 hover:bg-muted transition-colors"
+              aria-label="Aumentar quantidade"
             >
               <Plus className="w-4 h-4" />
             </button>

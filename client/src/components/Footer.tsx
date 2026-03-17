@@ -93,21 +93,27 @@ export default function Footer() {
           {/* Social */}
           <div>
             <h4 className="font-display font-bold mb-4">Redes Sociais</h4>
+
             <div className="flex gap-4">
               <a
                 href="#"
+                aria-label="Facebook"
                 className="p-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
+
               <a
                 href="#"
+                aria-label="Instagram"
                 className="p-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
+
               <a
                 href="#"
+                aria-label="Twitter"
                 className="p-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
               >
                 <Twitter className="w-5 h-5" />
